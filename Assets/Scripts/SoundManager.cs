@@ -6,7 +6,7 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] AudioClip musicTrack;
-    [SerializeField] float firstBeatOffset;
+    [SerializeField] public float firstBeatOffset;
     public float songBpm;
     public float songPositionInBeats;
     float secPerBeat;

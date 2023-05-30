@@ -15,7 +15,7 @@ public class WaveManager : MonoBehaviour
             instance = this;
         }
         else if (instance != this){
-            Debug.Log("wave instance already exists, destroying object!");
+            // Debug.Log("wave instance already exists, destroying object!");
             Destroy(this);
         }
     }
