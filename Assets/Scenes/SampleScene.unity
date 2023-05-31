@@ -2926,9 +2926,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1491094260}
-  musicTrack: {fileID: 8300000, guid: bf5ab5b3f4a96114ea2fb5bde43c5893, type: 3}
+  musicTrack: {fileID: 8300000, guid: fedd5f67e90a968418dea78bde1a1174, type: 3}
   firstBeatOffset: 0
-  songBpm: 87
+  songBpm: 111
   songPositionInBeats: 0
 --- !u!1001 &217800566
 PrefabInstance:
@@ -7502,7 +7502,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubes:
   - {fileID: 3584016124229677141, guid: 049dec9e37cc1094d9e648dd845bf929, type: 3}
-  - {fileID: 3584016124229677141, guid: 049dec9e37cc1094d9e648dd845bf929, type: 3}
+  - {fileID: 3584016124229677141, guid: 08f42fd08beea824cb199eeb678e3d5e, type: 3}
+  - {fileID: 3584016124229677141, guid: e6bd4922da2005049b016d7c37070b9d, type: 3}
+  - {fileID: 3584016124229677141, guid: dcd604eb7f937b14a814922bf3695af7, type: 3}
   spawnPoints:
   - {fileID: 33189874}
   soundManager: {fileID: 199897364}
