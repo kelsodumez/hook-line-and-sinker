@@ -27,7 +27,6 @@ public class NodeMaster : MonoBehaviour
 
     public void NodeEntered(GameObject node){
         if (nodes.Contains(node)){
-            Debug.Log(node);
             int nodeIndex = nodes.IndexOf(node)+1;
             if ((nodeIndex) > 3 ){
                 nodeIndex = 0;

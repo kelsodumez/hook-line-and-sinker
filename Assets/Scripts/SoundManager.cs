@@ -22,10 +22,12 @@ public class SoundManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void update(){
+    void Update()
+    {
         songPosition = (float)(AudioSettings.dspTime - dspSongTime - firstBeatOffset);
         songPositionInBeats = songPosition / secPerBeat;
-        // Debug.Log(songPositionInBeats);
+        Debug.Log(songPositionInBeats);
+
     }
     void PlayMusicTrack()
     {
