@@ -10,6 +10,8 @@ public class Crank : MonoBehaviour
     public Quaternion originalRotationValue;
     public GameObject Spawner;
     public GameObject rope;
+    public GameObject hook;
+    public GameObject gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,12 @@ public class Crank : MonoBehaviour
     void Update()
     {
         if (rope.GetComponent<RopeControllerSimple>().getMaxLength() <= 0f){
-            // fish caught
+            int scoreToAdd = hook.GetComponent<Hook>().getFishieAmount();
+            hook.GetComponent<Hook>().clearFishies();
+            gameManager.GetComponent<GameManager>().increaseScore(scoreToAdd);
+            scoreToAdd = 0;
+
+            rope.GetComponent<RopeControllerSimple>().SetMaxLength(1f);
         }
     }
 
